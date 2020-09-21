@@ -1,0 +1,2 @@
+1.2.3.4:80
+https://checkerproxy.net/ - get them off here or sum I get the ones written into hq after loading and then put hq.txt proxies into here to get only hqs!
