@@ -11,9 +11,9 @@ def my_function(URL, proxy):
     valid = requests.get(URL, proxies = proxies,timeout=15)
     if valid.status_code == 200:
         dataaa = {
-            "content" : f"@everyone \nServer found!\ndiscord.gg/{word}", #! Don't touch anything here tbh
-            "username" : "Discord.gg Server 'generator'", #! Username for webhook
-            "avatar_url" : "https://www.pngkit.com/png/detail/19-194063_discord-logo-discord-icon.png   ", #! Profile Picture For Webhook (eg. https://www.ascii.wtf/ascii.png)
+            "content" : f"@everyone \nServer found!\ndiscord.gg/{word}", #webhook message
+            "username" : "Discord.gg Server 'generator'", #webhook username
+            "avatar_url" : "https://www.pngkit.com/png/detail/19-194063_discord-logo-discord-icon.png   ", #webhook pfp
         }
         requests.post(webhookurl, data=dataaa)
         print(f"[+] discord.gg/{word} - VALID SERVER FOUND!")
