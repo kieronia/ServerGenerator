@@ -3,7 +3,7 @@ import threading, requests
 import time
 import random
 
-webhookurl = "https://discordapp.com/api/"
+webhookurl = "https://discordapp.com/api/" #put yo webhook url here!
 
 
 def my_function(URL, proxy):
@@ -20,7 +20,6 @@ def my_function(URL, proxy):
         f = open("hq.txt", "a")
         f.write(f"{proxy}\n")
         f.close()
-    #change if u wanna but discord ratelimits will  prevent messages being sent from the webhook
     else:
         print(f"[-] discord.gg/{word}")    
         f = open("hq.txt", "a")
